@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  padding: .25rem .75rem;
+  cursor: pointer;
+
+  &--primary {
+    background-image: linear-gradient(to bottom, $color-primary, darken($color-primary, 8));
+    color: #fff;
+    border: 1px solid darken($color-primary, 8);
+  }
+
+  &--secondary {
+    background-color: #fff;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+
+  &--submit {
+    margin-left: 5%;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

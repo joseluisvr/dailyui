@@ -1,0 +1,15 @@
+.link {
+  color: $color-primary;
+  text-decoration: none;
+
+  &--forgot {
+    display: block;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: $size-text;
+  }
+
+  &:hover {
+    color: darken($color-primary, 10);
+  }
+}

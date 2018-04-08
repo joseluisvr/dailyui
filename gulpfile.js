@@ -23,3 +23,9 @@ gulp.task('sass', ()=>{
         }))
         .pipe(gulp.dest('./dist/css/'));
 });
+
+// JS
+gulp.task('js', ()=> {
+    gulp.src(`./dev/js/${challenge}.js`)
+        .pipe(gulp.dest('./dist/js'));
+});

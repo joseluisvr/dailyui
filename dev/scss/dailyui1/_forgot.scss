@@ -1,0 +1,24 @@
+.forget__title {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid #f4f4f4;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.forgot__text {
+  margin-bottom: 1rem;
+}
+
+.forgot__label {
+  @extend .form__label;
+}
+
+.forgot__input {
+  @extend .form__input;
+
+  &--text {
+    @extend .form__input--text;
+  }
+}

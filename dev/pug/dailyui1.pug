@@ -6,19 +6,44 @@ block challenge
         .form-container
             .form__header
                 h1.form__title A
-                p.form__description Accede a la mejor comunidad de diseño
 
             .form__main
+                p.form__description Accede a la mejor comunidad de diseño
+
                 form.form__form(method="" action="")
                     label(for="login-user").form__label Usuario
                     input(type="text")#login-user.form__input.form__input--text
 
+                    .register-item.hidden
+                        label(for="register-mail").form__label Correo electrónico
+                        input(type="text")#register-mail.form__input.form__input--text
+
                     label(for="login-password").form__label Contraseña
                     input(type="password")#login-password.form__input.form__input--text
 
-                    p.form__forgot ¿Has olvidado tu contraseña?
-                    a(href="#").link.link--forgot Pulsa aquí
+                    .register-item.hidden
+                        label(for="register-repeat").form__label Repite la contraseña
+                        input(type="password")#register-repeat.form__input.form__input--text
+
+                    .login-item
+                        p.form__forgot ¿Has olvidado tu contraseña?
+                        a(href="#")#forgot-link.link.link--forgot Pulsa aquí
 
                     .form__footer
-                        button(type="button")#register-button.form__button.button.button--secondary Registrarse
-                        input(type="submit" value="Acceder").form__button.button.button--primary.button--submit
+                        .login-item
+                            button(type="button")#register-button.form__button.button.button--secondary Registrarse
+                            input(type="submit" value="Acceder").form__button.button.button--primary.button--submit
+                        .register-item.hidden
+                            button(type="button")#cancel-button.form__button.button.button--secondary Cancelar
+                            input(type="submit" value="Confirmar")#accept-button.form__button.button.button--primary.button--submit
+
+            .forgot-container.hidden
+                h2.forget__title ¿Cómo recuperar mi contraseña?
+                p.text.forgot__text Introduce el correo electrónico asociado a tu cuenta y te enviaremos un email en el que te detallamos cómo restablecer tu contraseña de manera 100% segura.
+                label(for="forgot-email").forgot__label Correo de recuperación
+                input(type="text")#forgot-email.forgot__input.forgot__input--text
+                button(type="button")#cancel-forgot-button.form__button.button.button--secondary Cancelar
+                input(type="submit" value="Recuperar").form__button.button.button--primary.button--submit
+
+
+    script(src="./js/dailyui1.js")

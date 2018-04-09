@@ -3,7 +3,7 @@ const gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     pug = require('gulp-pug');
 
-let challenge = 'dailyui1';
+let challenge = 'dailyui2';
 
 // PUG
 gulp.task('pug', ()=> {

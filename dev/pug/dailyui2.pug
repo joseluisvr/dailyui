@@ -1,0 +1,19 @@
+extends template/template
+
+block challenge
+    main
+        .order
+            .order__information
+                h1.order__title Nike shoes
+                img(src="./img/dailyui2/nike-shoes.jpeg" alt="Zapatillas Nike").order__img
+
+            form.order__payment(action="" method="")
+                .order__info-container
+                    label(for="quantity").label Cantidad
+                    input(type="number")#quantity.
+
+
+
+append config
+    -pageTitle = 'Credit card checkout'
+    -cssFile = 'dailyui2.css'
